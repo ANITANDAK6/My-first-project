@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <style>
+        table th {
+            background-color: blue;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            padding: 12px;
+        } 
+        caption {
+            caption-side: top;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: black;
+        }
+        table td:first-child {
+            background-color: dimgray;
+            color: black;
+            font-weight: bold;
+        }
+        .notes td  { background: yellow; }
+
+        .highlight-green td {
+            background: seagreen;
+            font-weight: bold;
+        }
+        .highlight-yellow td {
+            background: yellowgreen;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            background-color: aquamarine;
+        }
+ </style>
+    <table border="1" cellpadding="6" cellspacing="0"> 
+        <caption>
+            University-Wide Fall Festival & Academic Showcase: October 21-25, 2025
+        </caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Time Table </th>
+                <th colspan="2">Monday,oct 21</th>
+                <th colspan="2">Tuesday,oct 22</th>
+                <th colspan="3">Wednesday,oct 23</th>
+                <th colspan="1">Thursday</th>
+                <th colspan="1">Firday 25</th>
+            </tr>
+            <tr>
+                <th>Conferece Room A</th>
+                <th>Main Auditorium</th>
+                <th>Conferece Room A</th>
+                <TH> Lecture Hall 1</TH>
+                <th>Lecture Hall 2</th>
+                <th>Lecture Hall 3</th>
+                <th>Auditorium ROoom A</th>
+
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>08:00-09:00</td>
+            <td colspan="2">Festival Opening Ceremony</td>
+            <td rowspan="2">Keynote Future of A1</td>
+            <td rowspan="2">Workshop:Data Ethics</td>
+            <td rowspan="2">Stdent Project Demos</td>
+            <td rowspan="2">Career Fair Setup</td>
+            <td rowspan="2">Basketbll Tournament(prelims)</td>
+            <td>Dapt. Meeting</td>
+            <td>Anual ceremony</td>
+        </tr>
+        <tr>
+            <td>09:00-10:00</td>
+            <td rowspan="2">Faculty Research(Session A)</td>
+            <td rowspan="2">Poster session:sciences</td>
+            <td>Dpar.Meetings</td>
+            <td rowspan="2">Anual Mkt</td>
+
+        </tr>
+        <tr>
+            <td>10:00-11:00</td>
+            <td>Coffee Break & Networking</td>
+            <td>Break</td>
+            <td>Student Project Demos</td>
+            <td>Career Fair(Opening)</td>
+            <td>Basketbll Tournament</td>
+            <td rowspan="2">Guest Speaker:Entrepreneurship</td>
+            <td>Main Awards Ceremony</td>
+        </tr>
+        <tr class="highlight-green">
+            <td>11:00-12:00</td>
+            <td colspan="2">Morning Break & Refreshments</td>
+            <td rowspan="2">Panel Discussion:Climate Change</td>
+            <td rowspan="2">Interactive Workshop:VR/AR</td>
+            <td colspan="2">Invited Industry Talks</td>
+            <td>Career Fair(Session 1)</td>
+        </tr>
+        <tr>
+            <td>12:00-13:00</td>
+            <td rowspan="2">Student Union Assembly</td>
+            <td rowspan="2">Club Exhibitions (Zone 1)</td>
+            <td>Lunch Break</td>
+            <td rowspan="2">Sport Festival:Track & Field</td>
+        </tr>
+        <tr class="highlight-yellow">
+            <td>13:00-14:00</td>
+            <td colspan="2">Lunch Break (All Venues)</td>
+            <td>Lunch Break</td>
+            <td>Career Fair (Session 2)</td>
+            <td>Festival Closing Remarks</td>
+        </tr>
+        <tr>
+            <td>14:00-15:00</td>
+            <td rowspan="2">Faculty Research Presentations(Session B)</td>
+            <td rowspan="2">Poster Session:Humanities</td>
+            <td rowspan="2">Lecture: Quantum Computing</td>
+            <td rowspan="2">Skill-Building Seminar Resume Writing</td>
+            <td>Opem Mic Session</td>
+            <td>Startup Pitch Competition</td>
+            <td>Basketball Tournament (Finals)</td>
+            <td rowspan="2">Academic Advising Session</td>
+            <td rowspan="2">Campus Clean Up & Review</td>
+        </tr>
+        <tr>
+            <td>15:00-16:00</td>
+            <td>Cultural Performances</td>
+            <td>Research Colloquium</td>
+            <td>Awards & Closing</td>
+        </tr>
+        <tr class="notes">
+            <td>16:00-17:00</td>
+            <td colspan="9"><b>Notes:</b> All evening events (after 17:00)</td> 
+        </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>

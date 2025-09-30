@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <style>
+        table th {
+            font-weight: bold;
+            font-size: 25px;
+            background-color: darkgrey;
+            color: black;
+        }
+
+       caption {
+        caption-side: top;
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+        color: black;
+       }
+       table td.Category {
+        background-color: #d9edf7;
+        font-weight: bold;
+       } 
+      table td.Type {
+        background-color:yellowgreen;
+        font-weight: bold;
+       }
+       
+       table {
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        background-color: aliceblue;
+       }
+    </style>
+     <table border="3" cellpadding="20" cellspacing="0" >
+        <caption>
+            BASICS ITEM BREAKDOWN
+        </caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Category</th>
+                <th colspan="2">Details</th>
+                <TH rowspan="2">Status</TH>
+            </tr>
+            <tr>
+                <th>Type<highlight-yellow></th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <td class="Category" rowspan="3">Electronics</td>
+                <td class="Type">Phones</td>
+                <td>15</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td class="Type">Laptops</td>
+                <td>8</td>
+                <td>Low Stock</td>
+            </tr>
+            <tr>
+                <td class="Type">Tablets</td>
+                <td>12</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td class="Category" colspan="3">Miscellaneous items</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td class="Category" rowspan="2">Office Supplies</td>
+                <td class="Type">pens</td>
+                <td>50</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td class="Type">paper</td>
+                <td>20</td>
+                <td>Available</td>
+            </tr>
+        </tbody>
+    </table>
+        
+    
+</body>
+</html>

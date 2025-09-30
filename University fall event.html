@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body> 
+    <style>
+        table th {
+            background: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            font-size: 16px;
+        }
+        caption {
+            caption-side: top;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-bottom: 10px;
+            color: #002000
+        }
+        table td:first-child{
+            font-weight: bold;
+            background: gray;
+            color: black;
+        }
+        td.monday {
+            background-color: lightskyblue;
+        }
+        td.Friday {
+            background-color: aquamarine;
+        }
+        td.monday-tuesday {
+            background-color: blueviolet;
+        }
+        td.monday-friday {
+            background-color: blueviolet;
+        }
+        td.friday {
+            background-color: blueviolet;
+        }  
+        td.Wednesday {
+            background-color: aquamarine;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            background-color:white;
+        }
+        </style>
+    <table border="10" cellpadding="20" cellspacing="0" >
+        <caption>
+            University Fall Event Highlight: October 21-25,2024
+        </caption>
+      <thead>
+        <tr>
+            <th rowspan="2">Time Table</th>
+            <th colspan="2">Monday,oct 21</th>
+            <th colspan="2">Tuesday,oct 22</th>
+            <th colspan="2">Wednesday,oct 23</th>
+            <th rowspan="2">Thursday,oct 24</th>
+            <th rowspan="2">Friday,oct 25</th>
+        </tr>
+        <tr>
+            <th>Auditorium</th>
+            <th>Room A</th>
+            <th>Auditorium</th>
+            <th>Room A</th>
+            <th>Hall 1</th>
+            <th>Hall 2</th>
+        </tr>
+      </thead>  
+      <tbody>
+        <tr>
+            <td>09:00-10:00</td>
+            <td class="monday" colspan="2">Opening Ceremony</td>
+            <td>Keynote Address</td>
+            <td>Workshop A</td>
+            <td rowspan="2">Student Projects</td>
+            <td>Career Fair</td>
+            <td>Academic Advising</td>
+            <td>Award Rehearsal</td>
+        </tr>
+        <tr>
+            <td>10:00-11:00</td>
+            <td>Research Talks</td>
+            <td>Poster Session</td>
+            <td>Panel Discussion</td>
+            <td>Workshop B</td>
+            <td rowspan="2">Alumni Meet-Up</td>
+            <td rowspan="2">Guest Lecture</td>
+            <td class="Friday" rowspan="2">Main Awards Ceremony</td>
+        </tr>
+        <tr>
+            <td>11:00-12:0"0</td>
+            <td class="monday-tuesday" colspan="4">Morning Break $ Refreshments</td>
+            <td>Culture Showcase</td>
+         </tr>
+         <tr>
+            <td>12:00-13:00</td>
+            <td class="monday-friday" colspan="7">Lunch Break</td>
+            <td class="friday">Lunch Break</td>
+         </tr>
+         <tr>
+            <td>13:00-14:00</td>
+            <td>Student Forum</td>
+            <td>Club Fair</td>
+            <td>Guest Speaker</td>
+            <td>Seminar A</td>
+            <td>Startup Pitches</td>
+            <td>Debate Competition</td>
+            <td>Department Meetings</td>
+            <td>pop-up</td>
+         </tr>
+         <tr>
+            <td>14:00-15:00</td>
+            <td>Research Talks</td>
+            <td>Workshop C</td>
+            <td>Interactive Session</td>
+            <td>Seminar B</td>
+            <td class="Wednesday" colspan="2">Closing Remarks & Netwworking</td>
+            <td>Open Hours</td>
+            <td>Feedback Session</td>
+         </tr>
+
+      </tbody>
+    </table>
+
+    
+</body>
+</html>

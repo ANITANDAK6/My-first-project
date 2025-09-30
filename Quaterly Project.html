@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        caption {
+            text-align: center;
+            background: white;
+            color: black;
+            font-size: 40px;
+        }
+        table td {
+            width: 10%;
+            min-width: auto;
+            background: burlywood;
+        }
+        th, td {
+            border: 2px solid #ccc;
+            padding:20px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        table th {
+            background: blue;
+            color: black;
+            font-weight: bold;
+        }
+        .green {
+            background: green;
+            color: black;
+        }
+        .Green {
+            background: green;
+            color: black;
+            font-weight: bold;
+        }
+        .subtask {
+            font-size: 13px;
+            font-style: italic;
+            text-align: left;
+        }
+        
+        .notes {
+            text-align: left;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="2" Cellpaddind="20" cellspacing="0">
+        <caption>
+            Quaterly Project Status Update
+        </caption>
+        <thead>
+            <tr>
+                <th rowspan="3">Project ID</th>
+                <th rowspan="3">project Name</th>
+                <th rowspan="3">Team Lead</th>
+                <th colspan="4">Weekly Progress</th>
+                <th rowspan="3">Current Overall Status</th>
+                <th rowspan="3">Key Notes/Issues</th>
+            </tr>
+            <tr>
+                <th colspan="2">Week 1</th>
+                <th colspan="2">Week 2</th>
+            </tr>
+            <tr>
+                <th>status</th>
+                <th>Tasks Done</th>
+                <th>Status</th> 
+                <th>Tasks Done</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <td rowspan="2">PROJ-A01</td>
+                <td rowspan="2">Website Redesign</td>
+                <td rowspan="2">Aisha S.</td>
+                <td>On Track</td>
+                <td>Initial<br> mochups approved.</td>
+                <td>On Track</td>
+                <td>Frontend<br> dev 50% complete.</td>
+                <td class="green" >Green</td>
+                <td class="notes" rowspan="2">Client meeting scheduled<br> for next 
+                    monday to Review progress.<br> some minor delays on backend<br> 
+                    integration.</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="subtask">Sub-task:SEO Audit<br>
+                    Completed Week 1:Keyword research.</td>
+                    <td class="green">Green</td>
+            </tr>
+            <tr>
+                <td rowspan="2">PROJ-B02</td>
+                <td rowspan="2">Mobile App<br>Dev(iOS) </td>
+                <td rowspan="2">Benjamin <br> O.</td>
+                <td>Delayed</td>
+                <td>Login module done.</td>
+                <td>Delayed</td>
+                <td>User Profile<BR>20% done.</td>
+                <td class="Green">Yellow</td>
+                <td class="notes" rowspan="2">Waiting for API changes from backend team.
+                    <br>Requires re-evaluation of timeline.<br>Critical path impact.</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="subtask">Sub-task:UI/UX Review <br>Feedback 
+                    received and being integrated.</td>
+                <td class="Green">Yellow</td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
